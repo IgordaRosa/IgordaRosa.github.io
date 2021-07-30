@@ -1,0 +1,112 @@
+html, body{
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://pbs.twimg.com/media/EuctpOUXIAci9HV.png);
+}
+
+*{
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+     
+}
+
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    margin: 20px;
+    padding: 100px;
+    width: 50%;
+    height: 69%;
+    background-image:url(https://images.alphacoders.com/109/thumb-1920-1099436.png) ;
+    /* background-color:slategrey; */
+    border-radius:20px;
+    /* border: 10px double gainsboro; */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 40px 10px rgba(199,189,189,0.75);
+    -webkit-box-shadow: 0px 0px 40px 10px rgba(199,189,189,0.75);
+    -moz-box-shadow: 0px 0px 40px 10px rgba(199,189,189,0.75);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+img{
+    margin:20px
+}
+
+h1{
+    margin: 20px;
+    font-size: 25px;
+    color:black;
+}
+
+header > img{
+    border-radius: 150px;
+    border: 3px solid black;
+    margin-right: 100px;
+}
+
+#conteiner{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+#conteiner > div{
+    width: 50%;
+}
+
+#rs > a{
+    margin-right: 10px;
+}
+
+#descricao > p{
+    font-size: 20px;
+    color: aqua;
+}
+
+h2{
+    font-size:25px;
+    color:violet;
+}
+
+#b1{
+    color:maroon;
+    margin: 1px;
+}
+
+@media screen and (max-width:1000px) {
+    header{
+        flex-direction: column-reverse;
+
+    }
+    header > img{
+        margin-right:0px;
+    }
+    section{
+        height: auto;
+        overflow-y:auto;
+    }
+    #conteiner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #rs > a{
+        margin-right: 0px;
+    }
+}
