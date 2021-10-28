@@ -1,112 +1,257 @@
-html, body{
-    margin:0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(https://pbs.twimg.com/media/EuctpOUXIAci9HV.png);
-}
-
 *{
-    font-family: 'MinecraftiaRegular';
-    font-weight: normal;
-    font-style: normal;
-     
+   font-family: 'MinecraftiaRegular';
+   font-weight: normal;
+   font-style: normal;
+
 }
 
 body{
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        color: #1c1c1c;
 }
 
-section{
-    margin: 20px;
-    padding: 100px;
-    width: 50%;
-    height: 69%;
-    background-image:url(https://images.alphacoders.com/109/thumb-1920-1099436.png) ;
-    /* background-color:slategrey; */
-    border-radius:20px;
-    /* border: 10px double gainsboro; */
+h1, h2, h3{
+    color: #000000;
+}
+
+.botao{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: lightgray;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+nav{
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 40px 10px rgba(199,189,189,0.75);
-    -webkit-box-shadow: 0px 0px 40px 10px rgba(199,189,189,0.75);
-    -moz-box-shadow: 0px 0px 40px 10px rgba(199,189,189,0.75);
+    align-items: center;
+    background-color:black;
 }
+
+nav > a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+/* cabeçalho */
 
 header{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    background-image: url("./IMG/foto2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-color: #25282a;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+
 }
 
-img{
-    margin:20px
+header h1{
+    color: #ffffff;
+
 }
 
-h1{
-    margin: 20px;
-    font-size: 25px;
-    color:black;
+header p{
+    margin-bottom: 2em;
 }
 
-header > img{
-    border-radius: 150px;
-    border: 3px solid black;
-    margin-right: 100px;
-}
-
-#conteiner{
+#sobre{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color:cyan;
+    color: black;
+}
+
+#sobre h2{
+    color: black;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao{
+    background-color: lightgray;
+    color: black;
+}
+
+#servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#servicos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#prints{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#prints h2{
+    margin-bottom: 20px;
+}
+
+#prints img{
     width: 100%;
-    height: 90%;
+
 }
 
-#conteiner > div{
-    width: 50%;
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-#rs > a{
-    margin-right: 10px;
+#contato h2{
+    color:white;
+
 }
 
-#descricao > p{
-    font-size: 20px;
-    color: aqua;
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
 }
 
-h2{
-    font-size:25px;
-    color:violet;
+footer a{
+    text-decoration: none;
+    color: #00FFFF;
 }
 
-#b1{
-    color:maroon;
-    margin: 1px;
+.fixed-button{
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    margin: 20px;
+    right: 0;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (min-width: 768px ){
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
     header{
-        flex-direction: column-reverse;
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
 
     }
-    header > img{
-        margin-right:0px;
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
     }
-    section{
-        height: auto;
-        overflow-y:auto;
+
+    #servicos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
     }
-    #conteiner{
-        flex-direction: column;
-        align-items: center;
+
+    #servicos h2{
         text-align: center;
+        width: 100%;
+
     }
 
-    #rs > a{
-        margin-right: 0px;
+    #servicos div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    #prints{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    #prints h2{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #prints img{
+        width: 33.333333333%;
+    }
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+
+    }
+
+    #contato h2, #contato p{
+        width: 100%;
+        
     }
 }
