@@ -1,7 +1,6 @@
 *{
-   font-family: 'MinecraftiaRegular';
-   font-weight: normal;
-   font-style: normal;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -17,7 +16,7 @@ h1, h2, h3{
     color: #ffffff;
     text-decoration: none;
     padding: 10px 30px;
-    background-color: lightgray;
+    background-color: #d5d5d5;
     font-size: .9em;
     border-radius: 3px;
 }
@@ -94,7 +93,7 @@ header p{
     align-items: center;
     text-align: center;
     padding: 10px 10px 20px 20px;
-    background-color:cyan;
+    background-color:#f1f1f1;
     color: black;
 }
 
@@ -108,7 +107,6 @@ header p{
 }
 
 #sobre .botao{
-    background-color: lightgray;
     color: black;
 }
 
@@ -125,6 +123,11 @@ header p{
     align-items: center;
     text-align: center;
     margin-top: 30px;
+}
+
+#servicos img{
+    width: 50px;
+    height: 50px;
 }
 
 #prints{
@@ -151,21 +154,40 @@ header p{
     padding: 20px;
 }
 
-#contato h2{
-    color:white;
+.fundo-serv{
+    background-image: url(./IMG/Contatos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-color: #25282a;
+    background-attachment: fixed;
+}
 
+#contato h2{
+    color:black;
+
+}
+
+#contato img{
+    height: 50px;
+    width: 50px;
+}
+
+#contato .botao{
+    color: black;
 }
 
 footer{
     text-align: center;
     padding: 10px;
-    background-color: lightblue;
-    color: white;
+    background-color: #f1f1f1;
+    color: black;
 }
 
 footer a{
     text-decoration: none;
-    color: #00FFFF;
+    color: red;
 }
 
 .fixed-button{
